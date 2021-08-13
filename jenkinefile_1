@@ -42,7 +42,7 @@ pipeline {
          stage('Push Docker Image') {
             steps {
                 sh '''docker login -u ${dockeruser} -p ${dockerpassword}
-                    docker push kulshbhushanmayer/devops:latest'''
+                    docker push mohit1493s/devops:latest'''
             }
         }
         stage('Hello') {
